@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Budgeting App</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+    <!--Font Awesome Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body> 
+    <div class="h2">
+        <h2>Budget Application</h2>
+    </div>
+    <!-- <h2>Budget Application</h2> -->
+    <div class="wrapper">
+       <div class="container">
+        <div class="sub-container">
+            <!-- Budget -->
+        <div class="total-amount-container">
+            <h3>Budget</h3>
+           <p class="hide error" id="budget-error">Value cannot be empty or 
+            neagtive</p> 
+           <input type="number" id="total-amount" placeholder="Enter Total Amount">
+           <button class="submit" id="total-amount-button">
+            Set Budget </button>
+        </div>
+         <div class="user-amount-container">
+            <h3>Expenses</h3>
+            <p class="hide error" id="product-title-error">Value cannot be empty</p>
+           <input type="text" class="product-title" id="product-title" placeholder="Enter title of Product">
+           <input type="number" id="user-amount" placeholder="Enter cost of Product">
+            <button class="submit" id="check-amount">check amount</button>
+
+
+         </div>    
+        </div>
+        <div class="output-container flex-space">
+         <div>   
+         <p>Total Budget</p>
+         <span id="amount">0</span>
+        </div>
+        
+        <div>
+            <p>Expenses</p>
+            <span id="expenditure-value">0</span>
+        </div>
+           <div>
+            <p>Balance</p>
+            <span id="balance-amount">0</span>
+        </div>
+
+       </div> 
+    </div>
+    <!-- List-Items-->
+    <div id="expense-list">
+        <!-- footer -->
+        <div id="footer-list">
+        
+         <div class="p-title">Title</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="p-cost">Cost</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="p-edit">Edit</div>
+         <div class="p-delete">Del</div>
+
+        </div>
+    <!-- <div class="list"><div class="list-style"><h3>Orange</h3><h3>5000</h3><div class="icon"><i class="fa fa-pen-to-square "></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-trash-can"></i></div></div> -->
+      
+    </div>
+</div>
+
+<div class="sub-footer flex">
+    <h1>Prepared by Muhammad Ahsan</h1>
+    <p><span>Copyright © 2023 </span> - All right reserved | Muhammad Ahsan</p>
+</div>
+</footer>
+    
+</body>
+</html>
